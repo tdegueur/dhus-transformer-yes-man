@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-import org.dhus.transformation.MonitorableTask;
+import org.dhus.api.transformation.MonitorableTask;
 
 public class YesMonitorableTask implements MonitorableTask<URL>
 {
@@ -44,6 +44,7 @@ public class YesMonitorableTask implements MonitorableTask<URL>
 
       Files.copy(yesStream, yesPath, StandardCopyOption.REPLACE_EXISTING);
 
+      status = Status.COMPLETED;
       return yesPath.toUri().toURL();
    }
 

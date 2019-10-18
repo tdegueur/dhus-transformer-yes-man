@@ -5,11 +5,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import org.dhus.transformation.MonitorableTask;
-import org.dhus.transformation.ProductInfo;
-import org.dhus.transformation.TransformationException;
-import org.dhus.transformation.TransformationParameter;
-import org.dhus.transformation.Transformer;
+import org.dhus.api.transformation.MonitorableTask;
+import org.dhus.api.transformation.ProductInfo;
+import org.dhus.api.transformation.TransformationException;
+import org.dhus.api.transformation.TransformationParameter;
+import org.dhus.api.transformation.Transformer;
 
 public class YesTransformer implements Transformer
 {
