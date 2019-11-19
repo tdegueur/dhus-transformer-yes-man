@@ -32,7 +32,7 @@ public class YesTransformer implements Transformer
    }
 
    @Override
-   public MonitorableTask<URL> getTask(ProductInfo productInfo, Map<String, Object> parameters)
+   public MonitorableTask<URL> getTask(ProductInfo productInfo, Map<String, String> parameters)
          throws TransformationException
    {
       return new YesMonitorableTask();
